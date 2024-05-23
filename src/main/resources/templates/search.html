@@ -38,7 +38,7 @@
 
   <!-- TODO #4 - Loop over the search results to display all job fields. -->
 
-<!--<th:block th:if="${not #lists.isEmpty(jobs)}">-->
+
 
         <table th:each="job : ${jobs}" class = "job-listing">
             <tr>
@@ -66,12 +66,6 @@
                 <td th:text="${job.coreCompetency}"></td>
             </tr>
         </table>
-<!--    </th:block>-->
-
-<!--     Display a message if the jobs list is empty-->
-<!--    <th:block th:if="${#lists.isEmpty(jobs)}">-->
-<!--        <p>No results found.</p>-->
-<!--    </th:block>-->
 </div>
 
 </body>
